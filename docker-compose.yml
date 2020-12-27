@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  server:
+    image: tuxnvape/davical-standalone
+    volumes:
+      - openarena_config:/data
+      - openarena_data:/opt/openarena
+    ports:
+      - 27950:27950/udp
+      - 27960:27960/udp
+volumes:
+  openarena_config:
+  openarena_data:
