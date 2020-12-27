@@ -2,7 +2,7 @@ version: "3"
 
 services:
   server:
-    image: tuxnvape/davical-standalone
+    image: tuxnvape/openarena-arm
     volumes:
       - openarena_config:/data
       - openarena_data:/opt/openarena
