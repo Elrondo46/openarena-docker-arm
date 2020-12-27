@@ -11,6 +11,8 @@ libsdl2-dev \
 libgl1-mesa-dev \
 build-essential \
 libvorbis-dev \
+zip \
+unzip \
 wget
 
 RUN git clone git://github.com/OpenArena/engine.git && cd engine && make -j4
