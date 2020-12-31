@@ -31,6 +31,4 @@ RUN chmod +x /docker-entrypoint.sh && chmod +x /opt/openarena/oa_ded.armv7l
 EXPOSE 27950/udp
 EXPOSE 27960/udp
 
-VOLUME ["/opt/openarena/baseoa"]
-
 ENTRYPOINT ["/docker-entrypoint.sh"]
