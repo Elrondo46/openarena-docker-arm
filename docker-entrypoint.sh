@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # Checks if external data config is present, and integrate
+if [ ! -f /baseoa/pak0.pak ]
+then
+	echo "[INFO] Openarena files not found downloading it..."
+	wget "http://download.tuxfamily.org/openarena/rel/088/openarena-0.8.8.zip" && unzip openarena-0.8.8.zip && mv /openarena-0.8.8/baseoa/* /opt/openarena/baseoa/
+        rm openarena-0.8.8.zip && rm -r /openarena-0.8.8 && apt -y clean && apt -y autoremove && mkdir data
+fi
+
 if [ -f /data/server1.cfg ]
 then
 	echo "[INFO] Found server configuration file, adding it to server"
