@@ -1,4 +1,4 @@
-FROM armpits/raspbian-buster-lite-armhf:weekly.20200517
+FROM armpits/raspbian-buster-lite-armhf:latest
 
 MAINTAINER Baba Orhum
 
