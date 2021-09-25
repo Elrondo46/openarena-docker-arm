@@ -18,8 +18,8 @@ wget
 RUN git clone git://github.com/OpenArena/engine.git && cd engine && make -j4
 RUN mkdir -p /opt/openarena && mv /engine/build/release-linux-armv7l/* /opt/openarena/
 RUN rm -r /engine
-RUN wget "http://download.tuxfamily.org/openarena/rel/088/openarena-0.8.8.zip" && unzip baseoa.zip && mv /baseoa/* /opt/openarena/baseoa/
-RUN rm baseoa.zip && rm -r /baseoa && apt -y clean && apt -y autoremove && mkdir data
+RUN wget "http://download.tuxfamily.org/openarena/rel/088/openarena-0.8.8.zip" && unzip openarena-0.8.8.zip && mv /openarena-0.8.8/baseoa/* /opt/openarena/baseoa/
+RUN rm openarena-0.8.8.zip && rm -r /openarena-0.8.8 && apt -y clean && apt -y autoremove && mkdir data
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY ./conf/server1.cfg /data/server1.cfg
