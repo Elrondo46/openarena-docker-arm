@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Checks if external data config is present, and integrate
-if [ ! -f /opt/openarena/baseoa/pak0.pak ]
+if [ ! -f /opt/openarena/baseoa/pak0.pk3 ]
 then
 	echo "[INFO] Openarena files not found downloading it..."
 	wget "http://download.tuxfamily.org/openarena/rel/088/openarena-0.8.8.zip" && unzip openarena-0.8.8.zip && mv /openarena-0.8.8/baseoa/* /opt/openarena/baseoa/
