@@ -1,7 +1,5 @@
 FROM armpits/raspbian-buster-lite-armhf:latest
 
-MAINTAINER Baba Orhum
-
 #Install packages
 RUN apt update && apt -y dist-upgrade && apt install -y make \
 git \
@@ -15,7 +13,7 @@ zip \
 unzip \
 wget
 
-RUN git clone git://github.com/OpenArena/engine.git && cd engine && make -j4
+RUN git clone git://github.com/OpenArena/engine.git && engine/make -j4
 RUN mkdir -p /opt/openarena && mv /engine/build/release-linux-armv7l/* /opt/openarena/
 RUN rm -r /engine
 
