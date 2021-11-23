@@ -1,7 +1,7 @@
 # OpenArena Server in Docker for ARM
 Docker image for OpenArena Server
 
-### About OpenArena
+## About OpenArena
 OpenArena is a free and open-source video game. It is a first-person shooter (FPS), and a video game clone of Quake III Arena. 
 
 **Features**
