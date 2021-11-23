@@ -11,6 +11,6 @@ OpenArena is a free and open-source video game. It is a first-person shooter (FP
   - Tested in Raspberry Pi 4 with Arch Arm (docker image is raspbian buster fully updated)
 
 ### Settings
-  - Exposed Ports: UDP 27950 and UDP 27960
-  - Exposed Volumes: /data and /opt/openarena
-  - Config Files in data directory
+- Exposed Ports: UDP 27950 and UDP 27960
+- Exposed Volumes: /data and /opt/openarena
+- Config Files in data directory
