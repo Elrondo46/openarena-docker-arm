@@ -13,7 +13,7 @@ zip \
 unzip \
 wget
 
-RUN git clone git://github.com/OpenArena/engine.git && engine/make -j4
+RUN git clone git://github.com/OpenArena/engine.git && make -j4 -C ./engine
 RUN mkdir -p /opt/openarena && mv /engine/build/release-linux-armv7l/* /opt/openarena/
 RUN rm -r /engine
 
