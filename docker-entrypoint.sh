@@ -49,7 +49,7 @@ then
 
 	while read i; do
 		echo "[INFO] Found $i map file, adding it to server"
-		ln -s /data/$i /opt/openarena/baseoa/$i
+		ln -s "/data/$i" "/opt/openarena/baseoa/$i"
 	done </tmp/list_pk3.txt
 fi
 
