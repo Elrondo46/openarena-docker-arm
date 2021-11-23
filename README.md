@@ -1,3 +1,4 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/819abf813a2d4e738b25ee0d4933c6c2)](https://www.codacy.com/gh/Elrondo46/openarena-docker-arm/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Elrondo46/openarena-docker-arm&amp;utm_campaign=Badge_Grade)
 # OpenArena Server in Docker for ARM
 Docker image for OpenArena Server
 
