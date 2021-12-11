@@ -1,4 +1,4 @@
-FROM navikey/raspbian-buster:latest
+FROM debian:bullseye-slim
 
 #Install packages
 RUN apt update && apt -y dist-upgrade && apt install -y make \
