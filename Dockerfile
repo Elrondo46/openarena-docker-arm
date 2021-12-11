@@ -1,4 +1,4 @@
-FROM armpits/raspbian-buster-lite-armhf:latest
+FROM navikey/raspbian-buster:latest
 
 #Install packages
 RUN apt update && apt -y dist-upgrade && apt install -y make \
