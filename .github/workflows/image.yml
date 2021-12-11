@@ -38,6 +38,7 @@ jobs:
           push: true
           tags: |
             tuxnvape/openarena-arm:latest
+            tuxnvape/openarena-arm:arm32
 
       - name: Build and push 64
         uses: docker/build-push-action@v2
@@ -47,4 +48,4 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            tuxnvape/openarena-arm:latest
+            tuxnvape/openarena-arm:arm64

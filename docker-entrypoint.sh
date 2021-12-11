@@ -54,4 +54,4 @@ then
 fi
 
 # Starts the server
-/opt/openarena/oa_ded.armv7l +set dedicated 1 +exec server1.cfg
+/opt/openarena/oa_ded.arm +set dedicated 1 +exec server1.cfg

@@ -22,7 +22,7 @@ COPY ./conf/server1.cfg /data/server1.cfg
 COPY ./conf/maprotation1.cfg /data/maprotation1.cfg
 COPY ./conf/motd.cfg /data/motd.cfg
 
-RUN chmod +x /docker-entrypoint.sh && chmod +x /opt/openarena/oa_ded.armv7l
+RUN chmod +x /docker-entrypoint.sh && mv /opt/openarena/oa_ded.armv7l /opt/openarena/oa_ded.arm && chmod +x /opt/openarena/oa_ded.arm
 
 EXPOSE 27950/udp
 EXPOSE 27960/udp
