@@ -13,7 +13,7 @@ zip \
 unzip \
 wget
 
-RUN git clone git://github.com/OpenArena/engine.git && sed -i 's/arm/aarch64/g' engine/code/qcommon/q_platform.h && make -j4 -C ./engine
+RUN git clone https://github.com/OpenArena/engine.git && sed -i 's/arm/aarch64/g' engine/code/qcommon/q_platform.h && make -j4 -C ./engine
 RUN mkdir -p /opt/openarena && mv /engine/build/release-linux-aarch64/* /opt/openarena/
 RUN rm -r /engine
 
